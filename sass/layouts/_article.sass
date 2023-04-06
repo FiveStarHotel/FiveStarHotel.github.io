@@ -1,0 +1,128 @@
+@import "../abstract/_mixins.sass"
+    
+.article
+    //width: 110rem
+    width: 90%
+    max-width: 1150px
+    border-radius: 1.8rem
+    outline: 1px solid $color-outline
+    margin: 0 auto
+    overflow: hidden
+    @include adapt(tab-p)
+        width: 95%
+    @include adapt(phone-p)
+        width: 100%
+        border-radius: 0
+    //Заголовок
+    &__title-box
+        padding: 4.5rem 1rem 6rem 5rem
+        overflow: hidden
+        border-radius: 1.8rem 1.8rem 0 0
+        min-height: 38rem
+        position: relative
+        @include adapt(phone-p)
+            border-radius: 0
+            padding: 3rem 1rem 4rem 3.33rem
+    &__title
+        color: $color-h1
+        font-family: "Golos_c", sans-serif
+        font-weight: 700
+        max-width: 90%
+        font-size: 6.4rem
+        line-height: 7.7rem
+        display: inline-block
+        filter: drop-shadow($box-shadow)
+        margin-bottom: 3rem
+        //@include adapt(phone-p)
+        //    max-width: 60rem
+    &__title-underline
+        background: $color-white
+        margin: 0
+        width: 100%
+        height: .3rem
+        box-shadow: $box-shadow
+        @include adapt(phone-p)
+            width: 95%
+    &__blackout
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: #000000
+        opacity: 0.4
+    &__background
+        width: 100%
+        height: 100%
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
+        img
+            object-fit: cover
+            width: inherit
+            height: inherit
+    //Секция "Время Чтения"
+    &__readtime-container
+        display: flex
+        align-items: center
+    &__time-icon
+        width: 8.5rem
+        height: 8.5rem
+        margin-right: 1rem
+        pointer-events: none
+    &__readtime-textbox
+        color: $color-white
+        font-family: "Inter_c", sans-serif
+        font-size: 3.6rem
+    &__readtime-first
+        font-weight: 500
+        margin-bottom: .5rem
+    &__readtime-second
+        font-weight: 200
+    //Статья
+    &__text-area
+        padding: 4rem 4rem 6rem 4rem
+        min-height: 30rem
+        background: $color-article-background-light
+        @include adapt(phone-p)
+            padding: 5rem 3rem 4rem 3rem
+    span
+        display: block
+        font-size: 2.4rem
+        font-weight: 700
+        color: $color-span
+        margin: 3rem 0 3rem 0
+        &:first-child
+            margin-top: 0
+    &__text-area p
+        margin-bottom: 1.5rem
+        line-height: 2.08rem
+        text-align: justify
+    //&__text-area > p:last-of-type
+    //    margin-bottom: 6rem
+
+    &__buttons-container > *
+        display: inline-block
+
+    &__buttons-container
+        text-align: center
+    
+    &__links
+        &:not(:last-child)
+            margin-right: 20%
+        & > div[class^="icon-"]
+            display: inline-block
+
+        &_inactive
+            pointer-events: none
+            color: $color-inactive !important
+    //Источник
+    &__source-container
+        display: inline-block
+        margin-bottom: 6rem
+    &__separator
+        width: 150%
+    &__source-link
+        //@include link-source
+    

@@ -1,0 +1,26 @@
+.hover-underline
+    text-decoration: none !important
+    &::after
+        content: ""
+        width: 0
+        height: 2px
+        background: $color-hover
+        position: absolute
+        top: 115%
+        left: 50%
+        transform: translateX(-50%)
+        transition: all .2s
+        pointer-events: none
+    &:hover::after
+        width: 100%
+
+.mr1rem
+    margin-right: 1rem
+
+.mr4rem
+    margin-right: 4rem
+
+.mt80px
+    margin-top: 8rem
+.mt20px
+    margin-top: 2rem

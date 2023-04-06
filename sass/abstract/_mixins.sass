@@ -1,0 +1,37 @@
+@mixin clearfix
+    &::after
+        content: ""
+        display: table
+        clear: both
+
+@mixin link-source()
+    text-decoration: underline !important
+    text-underline-offset: .3rem
+
+
+@mixin adapt($var)
+
+    //Вертикальный мобильный телефон
+    @if $var == phone-p
+        @media (max-width: 600px)
+            @content
+
+    //Горизонтальный мобильный телефон
+    @if $var == phone-h
+        @media (max-width: 767px)
+            @content
+
+    //Вертикальный планшет
+    @if $var == tab-p
+        @media (max-width: 991px)
+            @content
+
+    //Горизонтальный планшет или маленький ноутбук
+    @if $var == tab-h
+        @media (max-width: 1199px)
+            @content
+
+    //Экран с большим разрешением (>1800x****)
+    @if $var == desk-big
+        @media (min-width: 1800px)
+            @content

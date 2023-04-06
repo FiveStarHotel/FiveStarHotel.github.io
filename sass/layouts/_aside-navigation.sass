@@ -1,0 +1,104 @@
+@import "../abstract/_mixins.sass"
+
+.aside-nav
+    position: sticky
+    top: $height-header
+    width: $width-nav
+    height: calc( 100vh - $height-header )
+    //padding-top: 2rem
+    display: flex
+    align-items: center
+    // Потом удалить, а хотя хз
+    border-right: 1px
+    border-bottom: 1px
+    border-style: solid
+    border-color: $color-border
+    transition: all .5s
+    @include adapt(tab-p)
+        position: fixed
+        left: -100%
+        width: 100%
+        z-index: 100000
+        background: #ffffff 
+        
+
+    &__container
+        //width: 80%
+        width: 90%
+        height: 70%
+        margin: 0 auto
+
+    &__text
+        text-align: center
+        margin-bottom: 1.5rem
+        color: $color-span
+        font-weight: 700
+
+    &__navigation
+        background: $color-white
+        height: 100%
+        overflow-y: scroll
+        overflow-x: hidden
+        border: 1px solid $color-border
+        padding-top: 0.5rem
+    
+    &__to-main
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 4rem
+
+    &__theme
+        //margin-bottom: 0.75rem
+        padding-bottom: 0.8rem
+        &:nth-child(even)
+            background: #f6f6f6
+
+    &__open-arrow
+        width: 20px
+        color: $color-span
+
+    &__checkbox
+        display: none
+
+    &__label
+        padding: 0.3rem 0.5rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        cursor: pointer
+        margin-bottom: 0.5rem
+
+    &__label-text
+        max-width: 90%
+        font-weight: 600
+    
+    &__articles
+        padding-left: 1rem
+        padding-right: 0.5rem
+
+    &__article
+        display: flex
+        &:not(:last-child)
+            margin-bottom: 1rem
+        &::before
+            content: "-"
+            margin-right: 0.3rem
+    &__link
+        &_current
+            font-weight: 800 !important
+        &_main-page
+            font-weight: 700 !important
+            color: $color-black !important
+    &__checkbox:not(:checked) ~ &__articles
+        display: none
+
+    
+    &__checkbox:checked ~ &__articles
+        display: inline-block
+    
+    &__checkbox:checked + &__label > div
+        transform: rotate(90deg)
+
+.icon-arrow
+    transition: all .2s

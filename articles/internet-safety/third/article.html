@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/icon-font.css">
+        <link rel="stylesheet" href="/css/style.css">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <script src="/js/script.js" defer></script>
+    <title>ОБЖ | Как защитить личные данные в сети</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__burger-buttons mr4rem">
+            <input type="checkbox" class="header__burger-checkbox" name="" id="burger">
+            <label class="header__label" for="burger"><span class="header__icon"></span></label>
+        </div>
+        <a href="/index.html" class="header__logo-container">
+            <img src="/icons/icon.svg" alt="" class="header__logo">
+            <span class="header__logo-text">Основы<br>Безопасности<br>Жизнедеятельности</span>
+        </a>
+    </header>
+    <div class="container">
+        <nav class="aside-nav">
+            <div class="aside-nav__container">
+                <p class="aside-nav__text">Навигация по сайту</p>
+                <div class="aside-nav__navigation">
+                    <div class="aside-nav__to-main">
+                        <a href="/index.html" class="aside-nav__link aside-nav__link_main-page">На главную страницу</a>
+                    </div>
+                    <div class="aside-nav__theme">
+                        <input type="checkbox" class="aside-nav__checkbox" id="theme1">
+                        <label class="aside-nav__label" for="theme1"><span class="aside-nav__label-text">Пожарная безопасность</span><div class="icon-arrow"></div></label>
+                        <ul class="aside-nav__articles">
+                            <li class="aside-nav__article"><a href="/articles/fire-safety/fire-behavior/article.html" class="aside-nav__link">Как вести себя в случае пожара</a></li>
+                            <li class="aside-nav__article"><a href="/articles/fire-safety/extinguisher-guide/article.html" class="aside-nav__link">Как пользоваться огнетушителем</a></li>
+                        </ul>
+                    </div>
+                    <div class="aside-nav__theme">
+                        <input type="checkbox" class="aside-nav__checkbox" id="theme2">
+                        <label class="aside-nav__label" for="theme2"><span class="aside-nav__label-text">Безопасность на дороге</span><div class="icon-arrow"></div></label>
+                        <ul class="aside-nav__articles">
+                            <li class="aside-nav__article"><a href="/articles/road-safety/rules/article.html" class="aside-nav__link ">ПДД для пешеходов</a></li>
+                            <li class="aside-nav__article"><a href="/articles/road-safety/bike-rules/article.html" class="aside-nav__link">Правила для велосипедистов</a></li>
+                            <li class="aside-nav__article"><a href="/articles/road-safety/passenger-rules/article.html" class="aside-nav__link">Правила для пассажиров</a></li>
+                            <li class="aside-nav__article"><a href="/articles/road-safety/ice-rules/article.html" class="aside-nav__link">Движение пешехода по улице в сильный гололед</a></li>
+                        </ul>
+                    </div>
+                    <div class="aside-nav__theme">
+                        <input type="checkbox" class="aside-nav__checkbox" id="theme3">
+                        <label class="aside-nav__label" for="theme3"><span class="aside-nav__label-text">Безопасность на водоёмах</span><div class="icon-arrow"></div></label>
+                        <ul class="aside-nav__articles">
+                            <li class="aside-nav__article"><a href="/articles/water-safety/first/article.html" class="aside-nav__link">Правила безопасного поведения на воде</a></li>
+                            <li class="aside-nav__article"><a href="/articles/water-safety/second/article.html" class="aside-nav__link">Про тонкий лёд</a></li>
+                            <li class="aside-nav__article"><a href="/articles/water-safety/third/article.html" class="aside-nav__link">Правила поведения при половодье или наводнении</a></li>
+                        </ul>
+                    </div>
+                    <div class="aside-nav__theme">
+                        <input type="checkbox" class="aside-nav__checkbox" id="theme4">
+                        <label class="aside-nav__label" for="theme4"><span class="aside-nav__label-text">Безопасное обращение с бытовым газом</span><div class="icon-arrow"></div></label>
+                        <ul class="aside-nav__articles">
+                            <li class="aside-nav__article"><a href="/articles/gas-safety/first/article.html" class="aside-nav__link">Общие рекомендации и правила</a></li>
+                            <li class="aside-nav__article"><a href="/articles/gas-safety/second/article.html" class="aside-nav__link">Запреты при использовании газа в быту</a></li>
+                            <li class="aside-nav__article"><a href="/articles/gas-safety/third/article.html" class="aside-nav__link">Способы обнаружения утечки газа и меры безопасности при его использовании</a></li>
+                            <li class="aside-nav__article"><a href="/articles/gas-safety/fourth/article.html" class="aside-nav__link">Что делать в случае утечки газа</a></li>
+                        </ul>
+                    </div>
+                    <div class="aside-nav__theme">
+                        <input type="checkbox" class="aside-nav__checkbox" id="theme5">
+                        <label class="aside-nav__label" for="theme5"><span class="aside-nav__label-text">Безопасное обращение с электроприборами</span><div class="icon-arrow"></div></label>
+                        <ul class="aside-nav__articles">
+                            <li class="aside-nav__article"><a href="/articles/electricity-safety/first/article.html" class="aside-nav__link">Основные правила безопасного обращения с электрической энергией</a></li>
+                            <li class="aside-nav__article"><a href="/articles/electricity-safety/second/article.html" class="aside-nav__link">Как электрическая энергия может стать причиной пожара</a></li>
+                            <li class="aside-nav__article"><a href="/articles/electricity-safety/third/article.html" class="aside-nav__link">Действия при возгорании электроприборов</a></li>
+                        </ul>
+                    </div>
+                    <div class="aside-nav__theme">
+                        <input type="checkbox" class="aside-nav__checkbox" id="theme6" checked>
+                        <label class="aside-nav__label" for="theme6"><span class="aside-nav__label-text">Безопасность в сети</span><div class="icon-arrow"></div></label>
+                        <ul class="aside-nav__articles">
+                            <li class="aside-nav__article"><a href="/articles/internet-safety/first/article.html" class="aside-nav__link">Распространенные угрозы интернет-безопасности</a></li>
+                            <li class="aside-nav__article"><a href="/articles/internet-safety/second/article.html" class="aside-nav__link">Опасности в публичных и домашних сетях Wi-Fi</a></li>
+                            <li class="aside-nav__article"><a href="/articles/internet-safety/third/article.html" class="aside-nav__link aside-nav__link_current">Как защитить личные данные в сети</a></li>
+                            <li class="aside-nav__article"><a href="/articles/internet-safety/fourth/article.html" class="aside-nav__link">Как защитить электронную почту</a></li>
+                            <li class="aside-nav__article"><a href="/articles/internet-safety/fifth/article.html" class="aside-nav__link">Сетевая безопасность</a></li>
+                            <li class="aside-nav__article"><a href="/articles/internet-safety/sixth/article.html" class="aside-nav__link">Безопасность мобильных устройств в интернете</a></li>
+                            <li class="aside-nav__article"><a href="/articles/internet-safety/seventh/article.html" class="aside-nav__link">Советы по безопасности: как защититься в интернете</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main class="main-wrapper">
+            <article class="article">
+                <div class="article__title-box">
+                    <h1 class="article__title">
+                        Как защитить личные данные в сети
+                        <hr class="article__title-underline">
+                    </h1>
+                    <div class="article__readtime-container">
+                         <img class="article__time-icon" src="/icons/clock.svg" alt="">
+                         <div class="article__readtime-textbox">
+                            <p class="article__readtime-first">Время Чтения</p>
+                            <p class="article__readtime-second">3,5 Минуты</p>
+                         </div>
+                    </div>
+                    <div class="article__background">
+                        <div class="article__blackout"></div>
+                        <img src="img/background.jpg" alt="">
+                    </div>
+                </div>
+                <div class="article__text-area">
+                    <!-- Текст -->
+                    <span>Как защитить личные данные в сети</span>
+                    <p>Чтобы обеспечить безопасность в интернете и защитить свои данные, можно следовать перечисленным ниже рекомендациям.</p>
+                    <span>Используйте многофакторную аутентификацию везде, где возможно</span>
+                    <p>Многофакторная аутентификация – это способ проверки подлинности, при котором для доступа к учетной записи используется два или более метода проверки. Например, вместо простого запроса имени пользователя или пароля при многофакторной аутентификации запрашивается дополнительная информация:</p>
+                    <p>1. Дополнительный одноразовый пароль, который серверы аутентификации веб-сайта отправляют на телефон или адрес электронной почты.</p>
+                    <p>2. Ответы на личные вопросы безопасности.</p>
+                    <p>3. Отпечаток пальца или другая биометрическая информация, например голосовые данные или лицо.</p>
+                    <p>Многофакторная аутентификация снижает вероятность кибератаки. Чтобы защитить онлайн-аккаунты, рекомендуется по возможности использовать многофакторную аутентификацию. Для обеспечения безопасности в интернете можно также можете применять сторонние приложения проверки подлинности, такие как Google Authenticator и Authy.</p>
+                    <span>Используйте сетевой экран</span>
+                    <p>Сетевой экран исполняет роль барьера между вашим компьютером и сетью, например интернетом. Сетевые экраны блокируют нежелательный трафик, а также помогают предотвратить заражение компьютера вредоносными программами. Часто сетевой экран входит в состав операционной системы или системы безопасности. Для обеспечения максимальной безопасности в интернете рекомендуется убедиться, что сетевой экран включен и настроено автоматическое обновление.</p>
+                    <span>Внимательно относитесь к выбору браузера</span>
+                    <p>Браузер – это основной инструмент для выхода в интернет, он играет ключевую роль в обеспечении безопасности в интернете. Хороший веб-браузер должен быть безопасным и обеспечивать защиту от утечки данных. Фонд свободы прессы составил подробное руководство, описывающее плюсы и минусы безопасности основных веб-браузеров.</p>
+                    <span>Создавайте надежные пароли и используйте менеджер паролей</span>
+                    <p>Надежный пароль помогает обеспечить безопасность в интернете. Он обладает следующими свойствами:</p>
+                    <p>1. Длинный: минимум 12 символов, в идеале, даже больше.</p>
+                    <p>2. Содержит заглавные и строчные буквы, а также специальные символы и цифры.</p>
+                    <p>3. Не очевидный: в пароле не используются комбинации последовательных цифр (1234) и личная информация, которую может угадать тот, кто вас знает, например, дата рождения или имя домашнего животного.</p>
+                    <p>4. Не содержит запоминающихся сочетаний клавиш.</p>
+                    <p>Замена букв и цифр похожими символами, например, “P@ssw0rd” вместо “password”, сейчас уже не является эффективной мерой – злоумышленники умеют обходить такую замену. Чем сложнее ваш пароль, тем сложнее его взломать. Использование менеджера паролей позволяет создавать, хранить и управлять всеми паролями с помощью единой защищенной учетной записи.</p>
+                    <p>Пароли необходимо хранить в секрете, никому не сообщать и нигде не записывать. Рекомендуется не использовать один пароль для всех учетных записей, а также регулярно менять пароли.</p>
+                    <span>Используйте на устройствах последнюю версию программы безопасности</span>
+                    <p>Антивирус, обеспечивающий защиту в интернете, очень важен для сохранения конфиденциальности и безопасности. Лучшие программы интернет-безопасности защищают от различных видов атак, а также обеспечивают безопасность данных в интернете. Очень важно обновлять антивирусное программное обеспечение. Большинство современных программ обновляются автоматически, что гарантирует защиту от последних угроз интернет-безопасности.</p>
+                    <!-- Конец текста -->
+                    <div class="article__source-container">
+                        <p class="article__source">
+                            <hr class="article__separator">
+                            Источник: <a class="article__source-link hover-underline" href="https://www.kaspersky.ru/resource-center/definitions/what-is-internet-security" target="_blank">kaspersky.ru</a>
+                        </p>
+                    </div>
+                    <div class="article__buttons-container">
+                        <a href="/articles/internet-safety/second/article.html" class="article__links hover-underline"><div class="icon-arrow-left"></div> Прошлая статья</a>
+                        <a href="/articles/internet-safety/fourth/article.html" class="article__links hover-underline">Следующая статья <div class="icon-arrow-right"></div></a>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+    <footer class="footer">
+
+    </footer>
+</body>
+</html>

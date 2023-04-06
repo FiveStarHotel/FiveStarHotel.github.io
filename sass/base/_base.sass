@@ -1,0 +1,39 @@
+@import "../abstract/_variables.sass"
+@import "../abstract/_mixins.sass"
+    
+*
+    box-sizing: border-box
+    
+html
+    font-size: 62.5%
+    @include adapt(tab-h) //Ready
+        font-size: 55%
+    @include adapt(tab-p) //Ready
+        font-size: 50%
+    @include adapt(phone-h) //Ready
+        font-size: 50%
+    @include adapt(phone-p) //Ready
+        //font-size: 6.5px
+        font-size: 7.5px
+    @include adapt(desk-big)
+        font-size: 62.5%
+
+
+body
+    background-color: $color-background-light
+
+.container
+    display: flex
+    &_main-page
+        display: block
+        max-width: 120rem
+        margin: 0 auto
+        
+
+.main-wrapper
+    width: calc( 100vw - $width-nav )
+    @include adapt(tab-p)
+        width: 100%
+
+// Стили для главной страницы
+.wrapper

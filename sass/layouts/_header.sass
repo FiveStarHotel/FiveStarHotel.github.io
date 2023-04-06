@@ -1,0 +1,77 @@
+@import "../abstract/_mixins.sass"
+
+.header
+    position: sticky
+    z-index: 1000
+    top: 0
+    background: rgba(255, 255, 255, 0.6)
+    backdrop-filter: blur(.9rem)
+    height: 9rem
+    //Убрать потом | хз
+    border-bottom: 1px
+    border-style: solid
+    border-color: $color-border
+    display: flex
+    align-items: center
+    padding-left: 2rem
+    &__logo-container
+        display: flex
+        align-items: center
+        user-select: none
+    &__logo
+        margin-right: 1rem
+        width: 5.5rem
+        height: 7rem
+    &__logo-text
+        line-height: 140%
+        font-weight: 600
+        letter-spacing: 0
+        color: #000000
+    
+    //Бургер-кнопка
+    &__burger-buttons
+        display: none
+        @include adapt(tab-p)
+            display: inline-block
+    &__burger-checkbox
+        display: none
+    &__label
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        cursor: pointer
+        width: 5rem
+        height: 5rem
+    &__icon
+        position: relative
+        &,
+        &::before,
+        &::after
+            transition: all .2s
+            width: 4rem
+            height: .3rem
+            background: $color-paragraph
+            display: inline-block
+        &::before,
+        &::after
+            content: ""
+            position: absolute
+            left: 0
+        &::before
+            top: -1.35rem
+        &::after
+            top: 1.35rem
+    
+    &__burger-checkbox:checked + &__label > &__icon
+        background: transparent
+    
+    &__burger-checkbox:checked + &__label > &__icon::before
+        top: 0
+        transform: rotate(135deg)
+
+    &__burger-checkbox:checked + &__label > &__icon::after
+        top: 0
+        transform: rotate(-135deg)
+    
+        
